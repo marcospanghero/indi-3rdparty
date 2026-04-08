@@ -2231,6 +2231,7 @@ int gphoto_start_preview(gphoto_driver *gphoto)
 {
     // Olympus, Sony, and Fuji cameras support streaming but without viewfinder_widget
     if (strcasestr(gphoto->manufacturer, "OLYMPUS") ||
+            strcasestr(gphoto->manufacturer, "OMSYSTEM") ||
             strcasestr(gphoto->manufacturer, "Sony Corporation") ||
             strcasestr(gphoto->manufacturer, "Fuji"))
         return GP_OK;
